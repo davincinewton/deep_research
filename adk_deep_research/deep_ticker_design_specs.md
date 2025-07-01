@@ -1,0 +1,1 @@
+# Deep Ticker Design Specifications

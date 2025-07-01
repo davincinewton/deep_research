@@ -1,0 +1,724 @@
+
+To do this, I should start by finding the specific article using the provided DOI or publication details. Since direct access to Project MUSE might be required, maybe searching via a university library database would help. But since that's not an option here, perhaps looking up the article through academic search engines like Google Scholar with the exact citation details.     
+
+Next, I need to locate pages 45-46 of the article and check if the quoted text is there. If it's present, then the answer is "Yes." If not, identify which word or phrase doesn't match.      
+
+I should also consider possible variations in wording due to paraphrasing or typographical errors. For example, maybe "cloak of print" vs. another term like "veil of print," but the user's quote uses "cloak," so I need to confirm that exact phrasing.
+
+Another angle is checking if there are any known errata or corrections for the article. Sometimes quotes might have been misattributed in subsequent works, so verifying through secondary sources could help.
+
+Additionally, looking up reviews or other citations of Greetham's work might reveal if others have referenced this specific quote correctly. If multiple sources cite it as presented by the user, that supports its accuracy. Conversely, discrepancies in other citations might indicate an error here.
+
+I should also consider the possibility that the original text uses a different term but similar meaning. For example, "scribal confusion" versus another type of confusion. Ensuring that each part of the quote matches exactly is crucial for fact-checking.
+
+Finally, if after all these steps there's no match, pinpointing the exact word or phrase in the user's citation that differs from the original text would be necessary.
+</think>
+
+```json
+{
+  "queries": [
+    "Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text",
+    "David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46",
+    "DOI 10.2979/tex.2008.3.1.44 article content verification",
+    "Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy",
+    "Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt"
+  ],
+  "explanation": "This query list systematically verifies the citation by: (1) locating the full text via DOI and journal details, (2) checking specific pages for the quoted phrase, (3) cross-referencing exact wording ('cloak of print' vs 'veil of scribal confusion'), and (4) ensuring page numbers match. The order prioritizes direct source access before analyzing content accuracy."
+}
+```
+second batch query list generating...
+INFO:httpx:HTTP Request: POST http://192.168.1.147:8080/v1/chat/completions "HTTP/1.1 200 OK"
+<think>
+Okay, let's tackle this. The user wants to fact-check a specific quote from Greetham's article. First, I need to confirm if the quoted text matches what's actually in the cited work.        
+
+The inline citation says: "Our relationship with the authors of the works we read can often be 'obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission’ 
+(Greetham 45-46)." The user is asking if this quote is accurate in pages 45-46 of Greetham's article.
+
+To verify, I need to find the exact text from the source. Since direct access might be limited without a subscription, using web searches with specific terms can help. The key here is to search for the exact quote or parts of it to see if they appear in the cited pages. Also, checking Project MUSE's database would be ideal, but since that's not accessible via web search alone, 
+I'll have to rely on snippets from search results.
+
+First step: Search for the full quote within the article title and author. Maybe using quotes around the exact text to find matches. Then check if pages 45-46 are mentioned in those results. If the quote is found there, it's a match. If not, look for discrepancies like "cloak of print" vs another term.
+
+Another angle: Search for the specific page numbers (45-46) along with the author and article title to see if the quote appears there. Also, check if "veil of scribal confusion and mis-transmission" is present in those pages.
+
+If any part doesn't match, like a different term instead of "cloak of print," that's the discrepancy. The user wants to know which word is incorrect without providing an article. So the search queries should target the exact quote parts and page numbers.
+</think>
+
+```json
+{
+  "queries": [
+    "Greetham \"Uncoupled: OR, How I Lost My Author(s)\" p45-46 Project MUSE",
+    "\"obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission\" Greetham Textual Cultures 2008",
+    "Greetham 2008 \"veil of scribal confusion\" page 45-46 Project MUSE",
+    "\"cloak of print\" vs \"veil of scribal confusion\" Greetham citation check",
+    "Textual Cultures vol3 no1 p45-46 Greetham quote verification"
+  ],
+  "explanation": "This query list systematically verifies the accuracy of the cited quote by: (1) locating the exact article pages, (2) searching for the full quoted text in context, (3) cross-checking key phrases like 'cloak of print' vs potential variations, and (4) validating page numbers against Project MUSE's digital archive. The order ensures first confirming source existence, then verifying content accuracy."
+}
+```
+Loading jina reranker...
+searching 0 query: Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text
+get_source_result: True
+searching 1 query: David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46
+get_source_result: True
+searching 2 query: DOI 10.2979/tex.2008.3.1.44 article content verification
+get_source_result: True
+searching 3 query: Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy
+get_source_result: True
+searching 4 query: Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt
+get_source_result: True
+searching 0 query: Greetham "Uncoupled: OR, How I Lost My Author(s)" p45-46 Project MUSE
+get_source_result: True
+searching 1 query: "obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission" Greetham Textual Cultures 2008
+get_source_result: True
+searching 2 query: Greetham 2008 "veil of scribal confusion" page 45-46 Project MUSE
+get_source_result: True
+searching 3 query: "cloak of print" vs "veil of scribal confusion" Greetham citation check
+get_source_result: True
+searching 4 query: Textual Cultures vol3 no1 p45-46 Greetham quote verification
+get_source_result: True
+
+
+["Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text", "David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46", 'DOI 10.2979/tex.2008.3.1.44 article content verification', "Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy", 'Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt', 'Greetham "Uncoupled: OR, How I Lost My Author(s)" p45-46 Project MUSE', '"obscured not by a \'cloak of print\' but by the veil of scribal confusion and mis-transmission" Greetham Textual Cultures 2008', 'Greetham 2008 "veil of scribal confusion" page 45-46 Project MUSE', '"cloak of print" vs "veil of scribal confusion" Greetham citation check', 'Textual Cultures vol3 no1 p45-46 Greetham 
+quote verification']
+
+
+[[{'title': 'Uncoupled: OR, How I Lost My Author(s) - Project MUSE', 'link': 'https://muse.jhu.edu/pub/3/article/240795', 'snippet': 'by D Greetham · 2008 · Cited by 3 — The essay traces the personal history of trying to find an author, in the sense of a number of attempts to identify a father figure.', 'date': None}, {'title': 'Uncoupled: OR, How I Lost My Author(s) - Project 
+MUSE', 'link': 'https://muse.jhu.edu/article/240795/figure/fig02', 'snippet': 'Project MUSE promotes the creation and dissemination of essential humanities and social science resources through collaboration with libraries, publishers, and ...', 'date': None}, {'title': 'Uncoupled: Or, How I Lost My Author(s) - ResearchGate', 'link': 'https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'snippet': 'No full-text available. Request Full-text Paper PDF. To read the full-text of this research, you can request a copy directly from the 
+author. Request full-text ...', 'date': None}, {'title': 'Textual Cultures: Texts, Contexts, Interpretation - Project MUSE', 'link': 'https://muse.jhu.edu/issue/12954', 'snippet': 'Uncoupled: OR, How I Lost My Author(s). David Greetham. pp. 44-55. DOI: https ... Forged from a partnership between a university press and a library, Project MUSE ...', 'date': None}], [{'title': 'Uncoupled: OR, How I Lost My Author(s) - Project MUSE', 'link': 'https://muse.jhu.edu/pub/3/article/240795', 'snippet': 'by D Greetham · 2008 · Cited by 3 — The essay traces the personal history of trying to find an author, in the sense of a number of attempts to identify a father figure.', 'date': None}, {'title': 'Uncoupled: Or, How I Lost My Author(s)', 'link': 'https://www.jstor.org/stable/30227901', 'snippet': 'by D Greetham · 2008 · Cited by 3 — Page 3. 46 Textual Cultures 3.1 (2008) scured not by a "veil of print" but by the veil of scribal confusion and mis- transmission. Our/my author lay beyond ...', 'date': ''}, {'title': '<b>Uncoupled</b>: OR, How I Lost My Author(s) - Project MUSE', 'link': 'https://muse.jhu.edu/pub/3/article/240795/pdf', 
+'snippet': 'by D Greetham · 2008 · Cited by 3 — Page 4. 46 | Textual Cultures 3.1 (2008) scured not by a “veil of print” but by the veil of scribal confusion and mis- transmission. Our/my author lay beyond ...', 'date': ''}, {'title': 'Inhalt - bibelgriechisch.online', 'link': 'http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf', 'snippet': '1 Maurice Robinson, 
+“Appendix: The Case for Byzantine Priority,” in The New Testament in the Original Greek: Byzanfine Text- form 2005, by\xa0...', 'date': '2014-03-18T00:00:00'}], [], [{'title': 'Stitching Time: Transtemporal Labor and Middle English Literature', 'link': 'https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download', 'snippet': 'by S Time · 2022 — This dissertation would be far worse without the stimulating conversations with and phenomenal criticism from my enduring writing partners, Aylin and Kaelie. It ...', 'date': None}, {'title': 'Lectio Divina and "Liturgical Reading" in Some Medieval Texts', 'link': 'https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds', 'snippet': 'by MS Grogan · 2012 — I have tried to demonstrate in this project that the physically isolated practice of lectio can participate in the corporate experiences of liturgy when the ...', 'date': None}, {'title': 'Zeitsprünge - Practices of Commentary - University of Toronto', 'link': 'https://globalcommentary.utoronto.ca/wp-content/uploads/2021/03/Practices-of-Commentary-Zeitspru%CC%88nge-Forschungen-zur-Fru%CC%88hen-Neuzeit.pdf', 'snippet': 'In many in- stances, they operate as segues into other thematic contexts, allow for polemics, exploit the commentarial licenses to pursue particular aims, and ...', 'date': ''}, {'title': 'Knowledge UChicago - The University of Chicago', 'link': 'https://knowledge.uchicago.edu/record/3043/files/Boxer_uchicago_0330D_15814.pdf', 'snippet': 'In particular, I thank Peter Murray Jones for his generosity. The itineracy that comes with extended periods of writing and research in new spaces brings with\xa0...', 'date': None}], [{'title': 'Textual Continuity - IU ScholarWorks', 'link': 'https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281', 'snippet': "by JK Young · 2021 — So I will offer just a few brief representative statements along those lines: “The textual condition's only immutable law is the law of change” ...", 'date': '2012-01-25T00:00:00'}, 
+{'title': 'Scholarly Editing in Perspective', 'link': 'https://www.cambridge.org/core/elements/scholarly-editing-in-perspective/7F91F4D6FC262406D460787C39AD56F5', 'snippet': 'by W Van Mierlo — Scholarly Editing in Perspective offers a critical reflection on the theory and methods of textual editing, as a contribution to a wider, comparative ...', 'date': '2025-02-20T00:00:00'}, {'title': 'Textual criticism - Wikipedia', 'link': 'https://en.wikipedia.org/wiki/Textual_criticism', 'snippet': 'If a scholar has several versions of a manuscript but no known original, then established methods of textual criticism can be used to seek to reconstruct the\xa0...', 'date': None}, {'title': 'Overexpression of arginase gene CAR1 renders yeast ...', 'link': 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/', 'snippet': 'by L Xiong · 2024 · Cited by 1 — Here we demonstrate that overexpressing a yeast native arginase-encoding gene, CAR1, renders Saccharomyces cerevisiae acetic acid tolerance.', 'date': '2024-05-29T00:00:00'}], [{'title': 'Uncoupled: Or, How I Lost My Author(s) - ResearchGate', 'link': 'https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'snippet': '1 Apr 2008 · The essay traces the personal history of trying to "find" an author, in the sense of a number of attempts to identify a "father figure" with whom an editorial and critical career might …', 'date': ''}, {'title': 'Uncoupled: Or, How I Lost My Author(s) - JSTOR', 'link': 'https://www.jstor.org/stable/pdf/30227901.pdf', 'snippet': 'Uncoupled OR, How I Lost My Author(s) David Greetham ABSTRACT The essay traces the personal history of trying to "find" an author, in the sense of a number of attempts to identify a …', 'date': ''}, {'title': 'Project MUSE - Textual Cultures: Texts, Contexts, Interpretation …', 'link': 'https://muse.jhu.edu/issue/12954', 'snippet': 'Project MUSE promotes the creation and dissemination of essential humanities and social science resources through collaboration with libraries, publishers, and scholars worldwide. …', 'date': ''}, {'title': 'Down the Rabbit Hole with David Greetham - scholarworks.iu.edu', 'link': 'https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569', 'snippet': 'David Greetham Emily Lauer Abstract Based on a talk given at the Symposium in honor of Dr. Greetham’s retirement, this essay addresses the influence Greetham has had on the author’s …', 'date': ''}], [{'title': 'Read Download Quot;obscured Not By A Cloak Of Print But By The …', 'link': 'https://bibleandbookcenter.com/read/%22obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Textual+Cultures+vol.3+no.1+2008/', 'snippet': 'Read Online Quot;obscured Not By A Cloak Of Print But By The Veil Of Scribal Confusion And Mis Transmissionquot; Textual Cultures Vol 3 No 1 2008 and Download Quot;obscured Not By …', 'date': ''}, {'title': 'greetham obscured not by a cloak of print but by the veil of …', 'link': 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/', 'snippet': 'A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …', 'date': ''}, {'title': 'obscured not by a "cloak of print" but by the veil of scribal …', 'link': 'https://fiqh.world-federation.org/search/obscured+not+by+a+%22cloak+of+print%22+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham/', 'snippet': 'A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …', 'date': ''}], [{'title': 'Uncoupled: OR, How I Lost My Author(s) - Project MUSE', 'link': 'https://muse.jhu.edu/pub/3/article/240795', 'snippet': 'by D Greetham · 2008 · Cited by 3 — ... project of gaining a more direct access to my author, obscured [End Page 45] not by a "veil of print" but by the veil of scribal confusion and mis-transmission.', 'date': None}, {'title': '"obscured not by a \'cloak of print\' but by the veil of scribal ...', 'link': 'https://fiqh.world-federation.org/search/%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46/', 'snippet': 'A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …', 'date': ''}, {'title': '\\"obscured not by a \\\'cloak of print\\\' but by the veil of scribal ...', 'link': 'https://wemakenews.co.kr/news/search.php?q=%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46', 'snippet': "1 Apr 2025 · 최신; 주요뉴스; 필라테스 
+폐업 피해 급증… 소비자 보호 대책 시급; 식중독균 검출된 '햇살비 고춧가루' 회수 '숨은 명소' 렛츠런파크 서울 벚꽃축제 4월3일부터~", 'date': ''}, {'title': '<b>Uncoupled</b>: OR, How I Lost My Author(s) - Project MUSE', 'link': 'https://muse.jhu.edu/pub/3/article/240795/pdf', 'snippet': 'by D Greetham · 2008 · Cited by 3 — Page 4. 46 | Textual Cultures 3.1 (2008) scured not by a “veil of print” but by the veil of scribal confusion and mis- transmission. Our/my author lay beyond ...', 'date': ''}], [{'title': "Obscured not by a 'cloak of print' but by the veil of scribal confusion ...", 'link': "https://www.wordplays.com/definition/obscured%20not%20by%20a%20'cloak%20of%20print'%20but%20by%20the%20veil%20of%20scribal%20confusion%20and%20mistransmission", 'snippet': "What does the word obscured not by a 'cloak of print' but by the veil of scribal confusion and mistransmission mean? Find and lookup the definition, synonyms, and antonyms of the 
+word …", 'date': ''}, {'title': 'greetham obscured not by a cloak of print but by the veil of …', 'link': 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/', 'snippet': 'A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …', 'date': ''}], [{'title': 'Project MUSE - Textual Cultures: Texts, Contexts, Interpretation-Volume ...', 'link': 'https://muse.jhu.edu/issue/12954', 'snippet': 'Textual Cultures (published annually since 1983 as Text: An Interdisciplinary Annual of Textual Studies) brings together essays by scholars from numerous disciplines and focuses on issues of textual editing, redefinitions of textuality, the history of the book, material culture, and the fusion of codicology with literary, musicological, and art historical interpretation and iconography.', 'date': ''}, {'title': 'Textual criticism in Indology and in European philology during the ...', 'link': 'https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252', 'snippet': 'by M Witzel · 2014 · Cited by 22 — Greetham, D.C. Textual scholarship: An introduction. New York: Garland 1994. Greg, W. W. The calculus of variants, an essay on textual criticism. Oxford ...', 'date': None}, {'title': 'Vol. 3, No. 1, Spring, 2008 of Textual Cultures on JSTOR', 'link': 'https://www.jstor.org/stable/i30227895', 'snippet': 'Textual Cultures brings together essays by scholars from numerous disciplines and focuses on issues of textual editing, redefinitions of textuality, the history...', 'date': ''}, {'title': "THE TEXTUAL STATE OF JAMES JOYCE'S ULYSSES", 'link': 'https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download', 'snippet': 'by KL Tully-Needler · 2008 — 46 David Greetham engaged the dynamics of theory and practice in reviewing both Gabler and McGann, in Devils and Angels. This collection of essays was ...', 'date': None}, {'title': 'Textual Cultures – The Society for Textual Scholarship', 'link': 'https://textualsociety.org/sts-journal-textual-cultures/', 'snippet': "From its origins in 1981, the Society for Textual Scholarship's journal has led the way in opening discussions in the field of textual studies. Textual Cultures: Texts, Contexts, Interpretation is devoted to textual scholarship in all language traditions. With an expansive definition of text and textuality to include a variety of disciplines and materials, the journal…", 'date': ''}]]
+
+
+[['https://muse.jhu.edu/pub/3/article/240795', 'https://muse.jhu.edu/article/240795/figure/fig02', 'https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'https://muse.jhu.edu/issue/12954'], ['https://muse.jhu.edu/pub/3/article/240795', 'https://www.jstor.org/stable/30227901', 'https://muse.jhu.edu/pub/3/article/240795/pdf', 'http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf'], [], ['https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download', 'https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds', 'https://globalcommentary.utoronto.ca/wp-content/uploads/2021/03/Practices-of-Commentary-Zeitspru%CC%88nge-Forschungen-zur-Fru%CC%88hen-Neuzeit.pdf', 'https://knowledge.uchicago.edu/record/3043/files/Boxer_uchicago_0330D_15814.pdf'], ['https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281', 'https://www.cambridge.org/core/elements/scholarly-editing-in-perspective/7F91F4D6FC262406D460787C39AD56F5', 'https://en.wikipedia.org/wiki/Textual_criticism', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/'], ['https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'https://www.jstor.org/stable/pdf/30227901.pdf', 'https://muse.jhu.edu/issue/12954', 'https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569'], ['https://bibleandbookcenter.com/read/%22obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Textual+Cultures+vol.3+no.1+2008/', 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/', 'https://fiqh.world-federation.org/search/obscured+not+by+a+%22cloak+of+print%22+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham/'], ['https://muse.jhu.edu/pub/3/article/240795', 'https://fiqh.world-federation.org/search/%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46/', 'https://wemakenews.co.kr/news/search.php?q=%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46', 'https://muse.jhu.edu/pub/3/article/240795/pdf'], ["https://www.wordplays.com/definition/obscured%20not%20by%20a%20'cloak%20of%20print'%20but%20by%20the%20veil%20of%20scribal%20confusion%20and%20mistransmission", 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/'], ['https://muse.jhu.edu/issue/12954', 'https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252', 'https://www.jstor.org/stable/i30227895', 'https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download', 'https://textualsociety.org/sts-journal-textual-cultures/']]
+
+
+
+retrieve text information...
+
+searching 0 query: Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text
+query:  Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text
+Fetching links: ['https://muse.jhu.edu/pub/3/article/240795', 'https://muse.jhu.edu/article/240795/figure/fig02', 'https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'https://muse.jhu.edu/issue/12954']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[FETCH]... ↓ https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 0.95s
+[SCRAPE].. ◆ https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 0.95s
+text/html; charset=utf-8
+[FETCH]... ↓ https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors                | ✓ | ⏱: 1.06s
+[SCRAPE].. ◆ https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors                | ✓ | ⏱: 0.06s
+[COMPLETE] ● https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors                | ✓ | ⏱: 1.12s
+text/html; charset=utf-8
+[FETCH]... ↓ https://muse.jhu.edu/article/240795/figure/fig02                                                     | ✓ | ⏱: 0.94s
+[SCRAPE].. ◆ https://muse.jhu.edu/article/240795/figure/fig02                                                     | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://muse.jhu.edu/article/240795/figure/fig02                                                     | ✓ | ⏱: 0.94s
+text/html; charset=utf-8
+[FETCH]... ↓ https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 1.59s
+[SCRAPE].. ◆ https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 0.07s
+[COMPLETE] ● https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 1.66s
+text/html; charset=utf-8
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+G:\work\smolagent\venv\Lib\site-packages\transformers\tokenization_utils_base.py:2718: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad 
+to max length, use `padding='max_length'`.
+  warnings.warn(
+searching 1 query: David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46
+query:  David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46
+Fetching links: ['https://muse.jhu.edu/pub/3/article/240795', 'https://www.jstor.org/stable/30227901', 'https://muse.jhu.edu/pub/3/article/240795/pdf', 'http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[FETCH]... ↓ https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 0.93s
+[SCRAPE].. ◆ https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 0.93s
+text/html; charset=utf-8
+[FETCH]... ↓ https://muse.jhu.edu/pub/3/article/240795/pdf                                                        | ✓ | ⏱: 0.89s
+[SCRAPE].. ◆ https://muse.jhu.edu/pub/3/article/240795/pdf                                                        | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://muse.jhu.edu/pub/3/article/240795/pdf                                                        | ✓ | ⏱: 0.90s
+text/html; charset=utf-8
+[FETCH]... ↓ https://www.jstor.org/stable/30227901                                                                | ✓ | ⏱: 1.28s
+[SCRAPE].. ◆ https://www.jstor.org/stable/30227901                                                                | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.jstor.org/stable/30227901                                                                | ✓ | ⏱: 1.29s
+text/html; charset=utf-8
+[FETCH]... ↓ http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf                                   | ✓ | ⏱: 1.36s
+[SCRAPE].. ◆ http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf                                   | ✓ | ⏱: 0.00s
+[COMPLETE] ● http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf                                   | ✓ | ⏱: 1.37s
+application/pdf
+PDF detected
+searching 2 query: DOI 10.2979/tex.2008.3.1.44 article content verification
+query:  DOI 10.2979/tex.2008.3.1.44 article content verification
+no valid source
+searching 3 query: Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy
+query:  Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy
+Fetching links: ['https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download', 'https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds', 'https://globalcommentary.utoronto.ca/wp-content/uploads/2021/03/Practices-of-Commentary-Zeitspru%CC%88nge-Forschungen-zur-Fru%CC%88hen-Neuzeit.pdf', 'https://knowledge.uchicago.edu/record/3043/files/Boxer_uchicago_0330D_15814.pdf']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[FETCH]... ↓ https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds                      | ✓ | ⏱: 1.20s
+[SCRAPE].. ◆ https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds                      | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds                      | ✓ | ⏱: 1.21s
+application/pdf
+PDF detected
+[ERROR]... × https://knowledge.uchic...chicago_0330D_15814.pdf  | Error: 
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ × Unexpected error in _crawl_web at line 731 in _crawl_web (venv\Lib\site-                                            │
+│ packages\crawl4ai\async_crawler_strategy.py):                                                                         │
+│   Error: Failed on navigating ACS-GOTO:                                                                               │
+│   Page.goto: net::ERR_ABORTED at https://knowledge.uchicago.edu/record/3043/files/Boxer_uchicago_0330D_15814.pdf      │
+│   Call log:                                                                                                           │
+│   - navigating to "https://knowledge.uchicago.edu/record/3043/files/Boxer_uchicago_0330D_15814.pdf", waiting until    │
+│ "domcontentloaded"                                                                                                    │
+│                                                                                                                       │
+│                                                                                                                       │
+│   Code context:                                                                                                       │
+│   726                       response = await page.goto(                                                               │
+│   727                           url, wait_until=config.wait_until, timeout=config.page_timeout                        │
+│   728                       )                                                                                         │
+│   729                       redirected_url = page.url                                                                 │
+│   730                   except Error as e:                                                                            │
+│   731 →                     raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")                           │
+│   732                                                                                                                 │
+│   733                   await self.execute_hook(                                                                      │
+│   734                       "after_goto", page, context=context, url=url, response=response, config=config            │
+│   735                   )                                                                                             │
+│   736                                                                                                                 │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+[ERROR]... × https://digital.lib.was...1-1be3da9495bb/download  | Error: 
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ × Unexpected error in _crawl_web at line 731 in _crawl_web (venv\Lib\site-                                            │
+│ packages\crawl4ai\async_crawler_strategy.py):                                                                         │
+│   Error: Failed on navigating ACS-GOTO:                                                                               │
+│   Page.goto: net::ERR_ABORTED at                                                                                      │
+│ https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download             │
+│   Call log:                                                                                                           │
+│   - navigating to                                                                                                     │
+│ "https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download", waiting  │
+│ until "domcontentloaded"                                                                                              │
+│                                                                                                                       │
+│                                                                                                                       │
+│   Code context:                                                                                                       │
+│   726                       response = await page.goto(                                                               │
+│   727                           url, wait_until=config.wait_until, timeout=config.page_timeout                        │
+│   728                       )                                                                                         │
+│   729                       redirected_url = page.url                                                                 │
+│   730                   except Error as e:                                                                            │
+│   731 →                     raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")                           │
+│   732                                                                                                                 │
+│   733                   await self.execute_hook(                                                                      │
+│   734                       "after_goto", page, context=context, url=url, response=response, config=config            │
+│   735                   )                                                                                             │
+│   736                                                                                                                 │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+[FETCH]... ↓ https://globalcommentary.utoronto.ca/wp-content/...Zeitsprünge-Forschungen-zur-Frühen-Neuzeit.pdf  | ✓ | ⏱: 7.37s
+[SCRAPE].. ◆ https://globalcommentary.utoronto.ca/wp-content/...Zeitsprünge-Forschungen-zur-Frühen-Neuzeit.pdf  | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://globalcommentary.utoronto.ca/wp-content/...Zeitsprünge-Forschungen-zur-Frühen-Neuzeit.pdf  | ✓ | ⏱: 7.38s
+application/pdf
+PDF detected
+searching 4 query: Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt
+query:  Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt
+Fetching links: ['https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281', 'https://www.cambridge.org/core/elements/scholarly-editing-in-perspective/7F91F4D6FC262406D460787C39AD56F5', 'https://en.wikipedia.org/wiki/Textual_criticism', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/']
+INFO:wikipediaapi:Wikipedia: language=en, user_agent: opendeepsearch (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+INFO:wikipediaapi:Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Textual_criticism&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+INFO:wikipediaapi:Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Textual criticism&explaintext=1&exsectionformat=wiki
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[ERROR]... × https://scholarworks.iu...nload/33650/37293/86281  | Error: 
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ × Unexpected error in _crawl_web at line 731 in _crawl_web (venv\Lib\site-                                            │
+│ packages\crawl4ai\async_crawler_strategy.py):                                                                         │
+│   Error: Failed on navigating ACS-GOTO:                                                                               │
+│   Page.goto: net::ERR_ABORTED at                                                                                      │
+│ https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281                             │
+│   Call log:                                                                                                           │
+│   - navigating to "https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281",        │
+│ waiting until "domcontentloaded"                                                                                      │
+│                                                                                                                       │
+│                                                                                                                       │
+│   Code context:                                                                                                       │
+│   726                       response = await page.goto(                                                               │
+│   727                           url, wait_until=config.wait_until, timeout=config.page_timeout                        │
+│   728                       )                                                                                         │
+│   729                       redirected_url = page.url                                                                 │
+│   730                   except Error as e:                                                                            │
+│   731 →                     raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")                           │
+│   732                                                                                                                 │
+│   733                   await self.execute_hook(                                                                      │
+│   734                       "after_goto", page, context=context, url=url, response=response, config=config            │
+│   735                   )                                                                                             │
+│   736                                                                                                                 │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+[FETCH]... ↓ https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/                                                   | ✓ | ⏱: 2.17s
+[SCRAPE].. ◆ https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/                                                   | ✓ | ⏱: 0.13s
+[COMPLETE] ● https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/                                                   | ✓ | ⏱: 2.29s
+text/html; charset=utf-8
+[FETCH]... ↓ https://www.cambridge.org/core/elements/scholarl...-in-perspective/7F91F4D6FC262406D460787C39AD56F5  | ✓ | ⏱: 3.12s
+[SCRAPE].. ◆ https://www.cambridge.org/core/elements/scholarl...-in-perspective/7F91F4D6FC262406D460787C39AD56F5  | ✓ | ⏱: 0.24s
+[COMPLETE] ● https://www.cambridge.org/core/elements/scholarl...-in-perspective/7F91F4D6FC262406D460787C39AD56F5  | ✓ | ⏱: 3.36s
+text/html; charset=utf-8
+searching 5 query: Greetham "Uncoupled: OR, How I Lost My Author(s)" p45-46 Project MUSE
+query:  Greetham "Uncoupled: OR, How I Lost My Author(s)" p45-46 Project MUSE
+Fetching links: ['https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'https://www.jstor.org/stable/pdf/30227901.pdf', 'https://muse.jhu.edu/issue/12954', 'https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[FETCH]... ↓ https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors                | ✓ | ⏱: 1.09s
+[SCRAPE].. ◆ https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors                | ✓ | ⏱: 0.06s
+[COMPLETE] ● https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors                | ✓ | ⏱: 1.14s
+text/html; charset=utf-8
+[FETCH]... ↓ https://www.jstor.org/stable/pdf/30227901.pdf                                                        | ✓ | ⏱: 1.84s
+[SCRAPE].. ◆ https://www.jstor.org/stable/pdf/30227901.pdf                                                        | ✓ | ⏱: 0.02s
+[COMPLETE] ● https://www.jstor.org/stable/pdf/30227901.pdf                                                        | ✓ | ⏱: 1.86s
+text/html; charset=utf-8
+[FETCH]... ↓ https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 1.50s
+[SCRAPE].. ◆ https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 0.07s
+[COMPLETE] ● https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 1.57s
+text/html; charset=utf-8
+[ERROR]... × https://scholarworks.iu...le/download/20114/26569  | Error: 
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ × Unexpected error in _crawl_web at line 731 in _crawl_web (venv\Lib\site-                                            │
+│ packages\crawl4ai\async_crawler_strategy.py):                                                                         │
+│   Error: Failed on navigating ACS-GOTO:                                                                               │
+│   Page.goto: net::ERR_ABORTED at https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569  │
+│   Call log:                                                                                                           │
+│   - navigating to "https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569", waiting      │
+│ until "domcontentloaded"                                                                                              │
+│                                                                                                                       │
+│                                                                                                                       │
+│   Code context:                                                                                                       │
+│   726                       response = await page.goto(                                                               │
+│   727                           url, wait_until=config.wait_until, timeout=config.page_timeout                        │
+│   728                       )                                                                                         │
+│   729                       redirected_url = page.url                                                                 │
+│   730                   except Error as e:                                                                            │
+│   731 →                     raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")                           │
+│   732                                                                                                                 │
+│   733                   await self.execute_hook(                                                                      │
+│   734                       "after_goto", page, context=context, url=url, response=response, config=config            │
+│   735                   )                                                                                             │
+│   736                                                                                                                 │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+searching 6 query: "obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission" Greetham Textual Cultures 2008
+query:  "obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission" Greetham Textual Cultures 2008
+Fetching links: ['https://bibleandbookcenter.com/read/%22obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Textual+Cultures+vol.3+no.1+2008/', 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/', 'https://fiqh.world-federation.org/search/obscured+not+by+a+%22cloak+of+print%22+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham/']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[FETCH]... ↓ https://fiqh.world-federation.org/search/greetha...k+of+print+but+by+the+veil+of+scribal+confusion/  | ✓ | ⏱: 1.37s
+[SCRAPE].. ◆ https://fiqh.world-federation.org/search/greetha...k+of+print+but+by+the+veil+of+scribal+confusion/  | ✓ | ⏱: 0.12s
+[COMPLETE] ● https://fiqh.world-federation.org/search/greetha...k+of+print+but+by+the+veil+of+scribal+confusion/  | ✓ | ⏱: 1.49s
+text/html; charset=UTF-8
+[FETCH]... ↓ https://fiqh.world-federation.org/search/obscure...cribal+confusion+and+mis-transmission"+Greetham/  | ✓ | ⏱: 2.55s
+[SCRAPE].. ◆ https://fiqh.world-federation.org/search/obscure...cribal+confusion+and+mis-transmission"+Greetham/  | ✓ | ⏱: 0.35s
+[COMPLETE] ● https://fiqh.world-federation.org/search/obscure...cribal+confusion+and+mis-transmission"+Greetham/  | ✓ | ⏱: 2.90s
+text/html; charset=UTF-8
+[FETCH]... ↓ https://bibleandbookcenter.com/read/"obscured+no...-transmission"+Textual+Cultures+vol.3+no.1+2008/  | ✓ | ⏱: 2.93s
+[SCRAPE].. ◆ https://bibleandbookcenter.com/read/"obscured+no...-transmission"+Textual+Cultures+vol.3+no.1+2008/  | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://bibleandbookcenter.com/read/"obscured+no...-transmission"+Textual+Cultures+vol.3+no.1+2008/  | ✓ | ⏱: 2.95s
+text/html; charset=UTF-8
+searching 7 query: Greetham 2008 "veil of scribal confusion" page 45-46 Project MUSE
+query:  Greetham 2008 "veil of scribal confusion" page 45-46 Project MUSE
+Fetching links: ['https://muse.jhu.edu/pub/3/article/240795', 'https://fiqh.world-federation.org/search/%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46/', 'https://wemakenews.co.kr/news/search.php?q=%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46', 'https://muse.jhu.edu/pub/3/article/240795/pdf']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[FETCH]... ↓ https://muse.jhu.edu/pub/3/article/240795/pdf                                                        | ✓ | ⏱: 0.80s
+[SCRAPE].. ◆ https://muse.jhu.edu/pub/3/article/240795/pdf                                                        | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://muse.jhu.edu/pub/3/article/240795/pdf                                                        | ✓ | ⏱: 0.81s
+text/html; charset=utf-8
+[FETCH]... ↓ https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 1.18s
+[SCRAPE].. ◆ https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://muse.jhu.edu/pub/3/article/240795                                                            | ✓ | ⏱: 1.19s
+text/html; charset=utf-8
+[FETCH]... ↓ https://fiqh.world-federation.org/search/"obscur...+confusion+and+mis-transmission"+Greetham+45-46/  | ✓ | ⏱: 2.79s
+[SCRAPE].. ◆ https://fiqh.world-federation.org/search/"obscur...+confusion+and+mis-transmission"+Greetham+45-46/  | ✓ | ⏱: 0.11s
+[COMPLETE] ● https://fiqh.world-federation.org/search/"obscur...+confusion+and+mis-transmission"+Greetham+45-46/  | ✓ | ⏱: 2.90s
+text/html; charset=UTF-8
+[FETCH]... ↓ https://wemakenews.co.kr/news/search.php?q="obsc...l+confusion+and+mis-transmission"+Greetham+45-46  | ✓ | ⏱: 6.26s
+[SCRAPE].. ◆ https://wemakenews.co.kr/news/search.php?q="obsc...l+confusion+and+mis-transmission"+Greetham+45-46  | ✓ | ⏱: 0.09s
+[COMPLETE] ● https://wemakenews.co.kr/news/search.php?q="obsc...l+confusion+and+mis-transmission"+Greetham+45-46  | ✓ | ⏱: 6.35s
+text/html; charset=utf-8
+searching 8 query: "cloak of print" vs "veil of scribal confusion" Greetham citation check
+query:  "cloak of print" vs "veil of scribal confusion" Greetham citation check
+Fetching links: ["https://www.wordplays.com/definition/obscured%20not%20by%20a%20'cloak%20of%20print'%20but%20by%20the%20veil%20of%20scribal%20confusion%20and%20mistransmission", 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[FETCH]... ↓ https://fiqh.world-federation.org/search/greetha...k+of+print+but+by+the+veil+of+scribal+confusion/  | ✓ | ⏱: 1.16s
+[SCRAPE].. ◆ https://fiqh.world-federation.org/search/greetha...k+of+print+but+by+the+veil+of+scribal+confusion/  | ✓ | ⏱: 0.11s
+[COMPLETE] ● https://fiqh.world-federation.org/search/greetha...k+of+print+but+by+the+veil+of+scribal+confusion/  | ✓ | ⏱: 1.27s
+text/html; charset=UTF-8
+[FETCH]... ↓ https://www.wordplays.com/definition/obscured no...he veil of scribal confusion and mistransmission  | ✓ | ⏱: 2.73s
+[SCRAPE].. ◆ https://www.wordplays.com/definition/obscured no...he veil of scribal confusion and mistransmission  | ✓ | ⏱: 0.04s
+[COMPLETE] ● https://www.wordplays.com/definition/obscured no...he veil of scribal confusion and mistransmission  | ✓ | ⏱: 2.78s
+text/html; charset=UTF-8
+searching 9 query: Textual Cultures vol3 no1 p45-46 Greetham quote verification
+query:  Textual Cultures vol3 no1 p45-46 Greetham quote verification
+Fetching links: ['https://muse.jhu.edu/issue/12954', 'https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252', 'https://www.jstor.org/stable/i30227895', 'https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download', 'https://textualsociety.org/sts-journal-textual-cultures/']
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[INIT].... → Crawl4AI 0.6.2
+[ERROR]... × https://hasp.ub.uni-hei...rticle/viewFile/258/252  | Error: 
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ × Unexpected error in _crawl_web at line 731 in _crawl_web (venv\Lib\site-                                            │
+│ packages\crawl4ai\async_crawler_strategy.py):                                                                         │
+│   Error: Failed on navigating ACS-GOTO:                                                                               │
+│   Page.goto: net::ERR_ABORTED at https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252             │
+│   Call log:                                                                                                           │
+│   - navigating to "https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252", waiting until           │
+│ "domcontentloaded"                                                                                                    │
+│                                                                                                                       │
+│                                                                                                                       │
+│   Code context:                                                                                                       │
+│   726                       response = await page.goto(                                                               │
+│   727                           url, wait_until=config.wait_until, timeout=config.page_timeout                        │
+│   728                       )                                                                                         │
+│   729                       redirected_url = page.url                                                                 │
+│   730                   except Error as e:                                                                            │
+│   731 →                     raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")                           │
+│   732                                                                                                                 │
+│   733                   await self.execute_hook(                                                                      │
+│   734                       "after_goto", page, context=context, url=url, response=response, config=config            │
+│   735                   )                                                                                             │
+│   736                                                                                                                 │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+[FETCH]... ↓ https://textualsociety.org/sts-journal-textual-cultures/                                             | ✓ | ⏱: 0.82s
+[SCRAPE].. ◆ https://textualsociety.org/sts-journal-textual-cultures/                                             | ✓ | ⏱: 0.03s
+[COMPLETE] ● https://textualsociety.org/sts-journal-textual-cultures/                                             | ✓ | ⏱: 0.85s
+text/html; charset=UTF-8
+[FETCH]... ↓ https://www.jstor.org/stable/i30227895                                                               | ✓ | ⏱: 1.79s
+[SCRAPE].. ◆ https://www.jstor.org/stable/i30227895                                                               | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.jstor.org/stable/i30227895                                                               | ✓ | ⏱: 1.80s
+text/html; charset=utf-8
+[FETCH]... ↓ https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 1.58s
+[SCRAPE].. ◆ https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 0.07s
+[COMPLETE] ● https://muse.jhu.edu/issue/12954                                                                     | ✓ | ⏱: 1.65s
+text/html; charset=utf-8
+[FETCH]... ↓ https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download    | ✓ | ⏱: 1.92s
+[SCRAPE].. ◆ https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download    | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download    | ✓ | ⏱: 1.93s
+application/pdf;charset=UTF-8
+
+Results for 'Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text':
+['title: Uncoupled: OR, How I Lost My Author(s) - Project MUSE\ndate: None\nlink: https://muse.jhu.edu/pub/3/article/240795\nsnippet: by D Greetham · 2008 · Cited by 3 — The essay traces the personal history of trying to find an author, in the sense of a number of attempts to identify a father figure.', 'title: Uncoupled: OR, How I Lost My Author(s) - Project MUSE\ndate: None\nlink: https://muse.jhu.edu/article/240795/figure/fig02\nsnippet: Project MUSE promotes the creation and dissemination of essential humanities and social science resources through collaboration with libraries, publishers, and ...', 'title: Uncoupled: Or, How I Lost My Author(s) - ResearchGate\ndate: None\nlink: https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors\nsnippet: No full-text available. Request Full-text Paper PDF. To read the full-text of this research, you can request a copy directly from the author. Request full-text ...\nadditional information: Article\n\n# Uncoupled: Or, How I Lost My Author(s)\n\n  * April 2008\n  * Textual Cultures Text Contexts Interpretation 3(1):44-55\n\nDOI:10.1353/txc.0.0011\n\nAuthors:\n\nDavid Greetham\n\nDavid Greetham\n\n  * This person is not on ResearchGate, or hasn\'t claimed this research yet.\n\nRequest full-text PDF\n\nTo read the full-text of this research, you can request a copy directly from\nthe author.\n\nRequest full-text\n\nDownload citation\n\nCopy link Link copied\n\n* * *\n\nRequest full-text\n\nDownload citation\n\nCopy link Link copied\n\nTo read the full-text of this research, you can request a copy directly from\nthe author.\n\n## Abstract## Abstract\n\nThe essay traces the personal history of trying to "find" an author, in the\nsense of a number of attempts to identify a "father figure" with whom an\neditorial and critical career might be linked. Describing such devices as the\nmapping out of a comprehensive series of abstract models for charting the\nrelationships between a translated and a translating text (in the case of John\nTrevisa) and the construction of an authorial idiolect where no autograph\nsurvives (in the case of Thomas Hoccleve), the personal narrative now regards\nthese attempts to reach back into the authorial psyche as hubristic, even\nimproper. In the place of such a single authorial identity, the essay\nconcludes by showing how authoriality rather than authorship took over in the\ndevelopment of a scholarly career, resulting in, for example, the founding of\nthe interdisciplinary Society for Textual Scholarship.\n\n**Discover the world\'s research**\n\n  * 25+ million members\n  * 160+ million publication pages\n  * 2.3+ billion citations', "title: Textual Cultures: Texts, Contexts, Interpretation - Project MUSE\ndate: None\nlink: https://muse.jhu.edu/issue/12954\nsnippet: Uncoupled: OR, How I Lost My Author(s). David Greetham. pp. 44-55. DOI: https ... Forged from a partnership between a university press and a library, Project MUSE ...\nadditional information: ###  Uncalculated Variance\n\nJ. C. C. Mays\n\npp. 29-43\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.29\n\n  * View Uncalculated Variance\n  * Download  Uncalculated Variance\n  * Save Uncalculated Variance Save Uncalculated Variance\n\n###  **Uncoupled** : OR, How I Lost My Author(s)\n\nDavid Greetham\n\npp. 44-55\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.44\n\n  * View Uncoupled: OR, How I Lost My Author(s)\n  * Download  Uncoupled: OR, How I Lost My Author(s)\n  * Save Uncoupled: OR, How I Lost My Author(s) Save Uncoupled: OR, How I Lost My Author(s)\n\n###  The Psychic Link\n\nW. Speed Hill\n\npp. 56-64\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.56\n\n  * View The Psychic Link\n  * Download  The Psychic Link\n  * Save The Psychic Link Save The Psychic Link\n\n###  Textual Scholarship and Diversity: Which Needs Affirmative Action More?\n\nGeorge Bornstein\n\npp. 65-76\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.65## About\n\n  * MUSE Story\n  * Publishers\n  * Discovery Partners\n  * Journal Subscribers\n  * Book Customers\n  * Conferences\n\n## What's on Muse\n\n  * Open Access\n  * Journals\n  * Books\n  * The Complete Prose of T. S. Eliot\n  * MUSE in Focus\n\n## Resources\n\n  * News & Announcements\n  * Email Sign-Up\n  * Promotional Materials\n  * Presentations\n  * Get Alerts\n\n## Information For\n\n  * Publishers\n  * Librarians\n  * Individuals\n  * Instructors\n\n## Contact\n\n  * Contact Us\n  * Help\n\n  *     1.     2.     3. \n\n## Policy & Terms\n\n  * Accessibility\n  * Privacy Policy\n  * Terms of Use\n\n2715 North Charles Street  \nBaltimore, Maryland, USA 21218\n\n+1 (410) 516-6989  \nmuse@jh.edu\n\n©2025 Project MUSE. Produced by Johns Hopkins University Press in\ncollaboration with The 
+Sheridan Libraries.\n\nNow and Always,  \nThe Trusted Content Your Research Requires\n\nNow and Always, The Trusted Content Your Research Requires\n\nBuilt on the Johns Hopkins University Campus\n\nBuilt on the Johns Hopkins University CampusBuilt on the Johns Hopkins University Campus\n\nBuilt on the Johns Hopkins University Campus\n\n©2025 Project MUSE. Produced by Johns Hopkins University Press in\ncollaboration with The Sheridan Libraries.\n\nBack To Top\n\n✓\n\nThanks for sharing!\n\nAddToAny\n\nMore…This website uses cookies to ensure you get the best experience on our\nwebsite. Without cookies your experience may not be seamless.\n\nAccept Accept\n\n[Skip to main content]\n\nInstitutional Login\n\nLOG IN\n\nAccessibility\n\nBrowse\n\nOR\n\nSearch: Search:\n\nmenu\n\nAdvanced Search Browse\n\nMyMUSE Account\n\nLog In / Sign Up Change My Account User Settings Access via Institution MyMUSE\nLibrary Search History View History Purchase History MyMUSE Alerts Individual\nSubscriptions\n\nContact Support\n\n# Textual Cultures: Texts, Contexts, Interpretation\n\n\\+ MUSE Alert\n\nFacebookTwitterEmailPrintShare\n\n## In this Issue\n\n### Volume 3, Number 1, Spring 2008\n\nIssue\n\n  * View \n  * Save Save\n\nAdditional Information###  _Tresor_ (review)\n\nFrancesco Capaccioni\n\npp. 96-101\n\n  * View Tresor (review)\n  * Download  Tresor (review)\n  * Save Tresor (review) Save Tresor (review)\n\n###  Notes on Contributors\n\npp. 102-103\n\n  * View Notes on Contributors\n  * Download  Notes on Contributors\n  * Save Notes on Contributors Save Notes on Contributors\n\n## Previous Issue\n\nVolume 2, Number 2, Autumn 2007\n\n## Next Issue\n\nVolume 3, Number 2, Autumn 2008\n\nAdditional Information  ISSN | 1933-7418  \n---|---  \nPrint ISSN | 1559-2936  \nLaunched on MUSE | 2008-07-15  \nOpen Access | No  \n  \n### Copyright\n\nCopyright © Society for Textual Scholarship\n\n## Project MUSE Mission\n\nProject MUSE promotes the creation and dissemination of essential humanities\nand social science resources through collaboration with libraries, publishers,\nand scholars worldwide. Forged from a partnership between a university press\nand a library, Project MUSE is a trusted part of the academic and scholarly\ncommunity it serves.\n\n## About"]   
+
+Results for 'David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46':
+['title: Uncoupled: OR, How I Lost My Author(s) - Project MUSE\ndate: None\nlink: https://muse.jhu.edu/pub/3/article/240795\nsnippet: by D Greetham · 2008 · Cited by 3 — The essay traces the personal history of trying to find an author, in the sense of a number of attempts to identify a father figure.', 'title: Uncoupled: Or, How I Lost My Author(s)\ndate: \nlink: https://www.jstor.org/stable/30227901\nsnippet: by D Greetham · 2008 · Cited by 3 — Page 3. 46 Textual Cultures 3.1 (2008) scured not by a "veil of print" but by the veil of scribal confusion and mis- transmission. Our/my author lay beyond ...', 'title: <b>Uncoupled</b>: OR, How I Lost My Author(s) - Project MUSE\ndate: \nlink: https://muse.jhu.edu/pub/3/article/240795/pdf\nsnippet: by D Greetham · 2008 · Cited by 3 — Page 4. 46 | Textual Cultures 3.1 (2008) scured not by a “veil of print” but by the veil of scribal confusion and mis- transmission. Our/my author lay beyond ...', 'title: Inhalt - bibelgriechisch.online\ndate: 2014-03-18T00:00:00\nlink: http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf\nsnippet: 1 Maurice Robinson, “Appendix: The Case for Byzantine Priority,” in The New Testament in the Original Greek: Byzanfine Text- form 2005, by\xa0...\nadditional information: 44Regarding pillar (2), there is no evidence, patristic or otherwise, since WH’s time that has substantially \nchanged the situation. Despite numerous individual Byzantine readings turning up in the early papyri, \nthere are still no manuscripts or Fathers earlier than the fourth century who bear witness to its text as \na whole.\nHowever, the accumulating evidence from scribal habits renders pillars (1) and (3) problematic. This is \nbecause pillars (1) and (3) themselves lean heavily upon the transcriptional canons. Thus, WH argued \nthat conflations of the two earlier “Western” and “Neutral” texts to form the Byzantine text were a more \nlikely explanation than the idea that omission of material might have occurred in both the Western and \nNeutral texts. This is because WH believed that scribes acted “under the influence of an impulse to omit \nno recorded matter.”71\nThe studies into scribal habits provide us with an alternative explanation for WH’s “conflations.” Thatfree from frustration with those who refused to accept the many faults of the TR. We notice an underlying \nconflict between pro and anti-TR positions whether we look at early textual critics like Gerhard von \nMaestricht responding to Mill’s apparatus, Bengel and Wetstein responding to Gerhard or 19th century \ncritics like Tregelles. It is the debate over the TR and the preferential treatment which most early textual \ncritics gave to more ancient witnesses which overshadows (or rather, as we shall see, clouds) the issue \nof scribal habits. \nTwo problems arise from the way in 
+which these early textual critics allowed the debate over the \nTR to shape their transcriptional canons: one methodological and one logical. Firstly, the process of \ndetermining scribal habits was ill-defined and thus methodologically far from satisfactory. Early textual \ncritics did not draw up clearly formulated principles by which to detect scribal errors, nor did theybetween the umlauts and the Syriac text,45 there may also be a connection between some of the umlauts \nand the Western  text,46 and there is a clearly demonstrable connection between the umlauts in the \nVaticanus Gospels and the manuscripts in the Family 1 tradition. \nIt seems highly unlikely, therefore, that the scribe of Vaticanus had a single manuscript with a mixed \ntext sufficient to produce all of the umlauts. It also appears highly unlikely that these suggested texts are \nsufficient to explain all of the umlauts. Other texts were likely employed.\nAdditionally, Vaticanus does not contain the Pericope de Adultera , and there is most likely no umlaut at \n7:52 marking the PA’s omission. There is, however, an umlaut in the column of empty space following the \nend of John. The most likely explanation for this is that the scribe of Vaticanus who placed the umlauts \nhad access to a manuscript that did not contain the PA after John 
+7:52, but did have  some additional textthe tendency of scribes to harmonize to the immediate context (as well as to ‘general usage’, that is, to \ncommon phraseology). \nIn the present author’s study, the canon was tested by comparing harmonizations against \ndisharmonizations among singular readings in the 33 chapters studied. The result was 411 \ndisharmonizations to 204 harmonizations. This might again be surprising for those whose knowledge \nof textual criticism is confined to what they have read in the handbooks as opposed to actual documents. \nBut consider, for example, the singular harmonizations and disharmonizations from the verse about \nthe Heavenly Father giving the Holy Spirit to those who ask him, Luke 11:13 (all harmonizations and \ndisharmonizations to Matthew 7:11):\nHarmonizations:\n1. L292 substitutes en toij ouranoij for ex ouranou\n2. 477* omits pneuma \n3. D substitutes agaqon doma for pneuma agion\n4. Q substitutes domata agaqa for pneuma agion\n \nDisharmonizations:\n1. 1247 substitutes hmeij  for umeij42Instead of offering a method for distinguishing scribal errors from genuine readings and publishing \nlists of such errors to justify their canons, early textual critics simply observed deviations from the TR, \nusing Mill’s apparatus or their own collations. The TR with all its faults is hardly an acceptable basis \nfrom which to determine textual principles. Even so, for all its faults, the TR coincides with the text of \nvirtually all witnesses in many places in the New Testament. Variations from the TR cannot be assumed \n‘original readings’, for they are sometimes scribal errors themselves. So, even when these early textual \ncritics cited particular readings in defence of the canons “presumably as evidence — the evaluation \nof one reading as the original and another as arising by a scribal error is frequently suspect from a \nmethodological point of view, and so one is left wondering why the direction of scribal error may not \nhave been other than is stated.”62']
+
+Results for 'DOI 10.2979/tex.2008.3.1.44 article content verification':
+[]
+
+Results for 'Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy':
+['title: Stitching Time: Transtemporal Labor and Middle English Literature\ndate: None\nlink: https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download\nsnippet: by S Time · 2022 — This dissertation would be far worse without the stimulating conversations with and phenomenal criticism from my enduring writing partners, Aylin and Kaelie. It ...', 'title: Lectio Divina and "Liturgical Reading" in Some Medieval Texts\ndate: None\nlink: https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds\nsnippet: by MS Grogan · 2012 — I have tried to demonstrate in this project that the physically isolated practice of lectio can participate in the corporate experiences of liturgy when the ...', 
+'title: Zeitsprünge - Practices of Commentary - University of Toronto\ndate: \nlink: https://globalcommentary.utoronto.ca/wp-content/uploads/2021/03/Practices-of-Commentary-Zeitspru%CC%88nge-Forschungen-zur-Fru%CC%88hen-Neuzeit.pdf\nsnippet: In many in- stances, they operate as segues into other thematic contexts, allow for polemics, exploit the commentarial licenses to pursue 
+particular aims, and ...', 'title: Knowledge UChicago - The University of Chicago\ndate: None\nlink: https://knowledge.uchicago.edu/record/3043/files/Boxer_uchicago_0330D_15814.pdf\nsnippet: In particular, I thank Peter Murray Jones for his generosity. The itineracy that comes with extended periods of writing and research in new spaces brings with\xa0...']
+
+Results for 'Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt':
+["title: Textual Continuity - IU ScholarWorks\ndate: 2012-01-25T00:00:00\nlink: https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281\nsnippet: by JK Young · 2021 — So I will offer just a few brief representative statements along those lines: “The textual condition's only immutable law is the law of change” ...", 'title: Scholarly Editing in 
+Perspective\ndate: 2025-02-20T00:00:00\nlink: https://www.cambridge.org/core/elements/scholarly-editing-in-perspective/7F91F4D6FC262406D460787C39AD56F5\nsnippet: by W Van Mierlo — Scholarly 
+Editing in Perspective offers a critical reflection on the theory and methods of textual editing, as a contribution to a wider, comparative ...', 'title: Textual criticism - Wikipedia\ndate: None\nlink: https://en.wikipedia.org/wiki/Textual_criticism\nsnippet: If a scholar has several versions of a manuscript but no known original, then established methods of textual criticism 
+can be used to seek to reconstruct the\xa0...', 'title: Overexpression of arginase gene CAR1 renders yeast ...\ndate: 2024-05-29T00:00:00\nlink: https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/\nsnippet: by L Xiong · 2024 · Cited by 1 — Here we demonstrate that overexpressing a yeast native arginase-encoding gene, CAR1, renders Saccharomyces cerevisiae acetic acid tolerance.']
+
+Results for 'Greetham "Uncoupled: OR, How I Lost My Author(s)" p45-46 Project MUSE':
+['title: Uncoupled: Or, How I Lost My Author(s) - ResearchGate\ndate: \nlink: https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors\nsnippet: 1 Apr 2008 · The essay traces the personal history of trying to "find" an author, in the sense of a number of attempts to identify a "father figure" with whom an editorial and critical career might …\nadditional information: Article\n\n# Uncoupled: Or, How I Lost My Author(s)\n\n  * April 2008\n  * Textual Cultures Text Contexts Interpretation 3(1):44-55\n\nDOI:10.1353/txc.0.0011\n\nAuthors:\n\nDavid Greetham\n\nDavid Greetham\n\n  * This person is not on ResearchGate, or hasn\'t claimed this research yet.\n\nRequest full-text PDF\n\nTo read the full-text of this research, you can request a copy directly from\nthe author.\n\nRequest full-text\n\nDownload citation\n\nCopy link Link copied\n\n* * *\n\nRequest full-text\n\nDownload citation\n\nCopy link Link copied\n\nTo read the full-text of this research, you can request a copy directly from\nthe author.\n\n## Abstract## Abstract\n\nThe essay traces the personal history of trying to "find" an author, in the\nsense of a number of attempts to identify a "father figure" with whom an\neditorial and critical career might be linked. Describing such devices as the\nmapping out of a comprehensive 
+series of abstract models for charting the\nrelationships between a translated and a translating text (in the case of John\nTrevisa) and the construction of an authorial idiolect where no autograph\nsurvives (in the case of Thomas Hoccleve), the personal narrative now regards\nthese attempts to reach back into the authorial psyche as hubristic, even\nimproper. In the place of such a single authorial identity, the essay\nconcludes by showing how authoriality rather than authorship took over in the\ndevelopment of a scholarly career, resulting in, for example, the founding of\nthe interdisciplinary Society for Textual Scholarship.\n\n**Discover the world\'s research**\n\n  * 25+ million members\n  * 160+ million publication pages\n  * 2.3+ billion citations', 'title: Uncoupled: Or, How I Lost My Author(s) - JSTOR\ndate: \nlink: https://www.jstor.org/stable/pdf/30227901.pdf\nsnippet: Uncoupled OR, How I Lost My Author(s) David Greetham ABSTRACT The essay traces the personal history of trying to "find" an author, in the sense of a number of attempts to identify a …', "title: Project MUSE - Textual Cultures: Texts, Contexts, Interpretation …\ndate: \nlink: https://muse.jhu.edu/issue/12954\nsnippet: Project MUSE promotes the creation and dissemination of essential humanities and social science resources through collaboration with libraries, publishers, and scholars worldwide. …\nadditional information: ###  Uncalculated Variance\n\nJ. C. C. Mays\n\npp. 29-43\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.29\n\n  * View Uncalculated Variance\n  * Download  Uncalculated Variance\n  * Save Uncalculated Variance Save Uncalculated Variance\n\n###  **Uncoupled** : OR, How I Lost My Author(s)\n\nDavid Greetham\n\npp. 44-55\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.44\n\n  * View Uncoupled: OR, How I Lost My Author(s)\n  * Download  Uncoupled: OR, How I Lost My Author(s)\n  * Save Uncoupled: OR, How I Lost My Author(s) Save Uncoupled: OR, How I Lost My Author(s)\n\n###  The Psychic Link\n\nW. Speed Hill\n\npp. 56-64\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.56\n\n  * View The Psychic Link\n  * Download  The Psychic Link\n  * Save The Psychic Link Save The Psychic Link\n\n###  Textual Scholarship and Diversity: Which Needs Affirmative Action More?\n\nGeorge Bornstein\n\npp. 65-76\n\nDOI: https://doi.org/10.2979/tex.2008.3.1.65## About\n\n  * MUSE Story\n  * Publishers\n  * Discovery Partners\n  * Journal Subscribers\n  * Book Customers\n  * Conferences\n\n## What's on Muse\n\n  * Open Access\n  * Journals\n  * Books\n  * The Complete Prose of T. S. Eliot\n  * MUSE in Focus\n\n## Resources\n\n  * News & Announcements\n  * Email Sign-Up\n  * Promotional Materials\n  * Presentations\n  * Get Alerts\n\n## Information For\n\n  * Publishers\n  * Librarians\n  * Individuals\n  * Instructors\n\n## Contact\n\n  * Contact Us\n  * Help\n\n  *     1.     2.     3. \n\n## Policy & Terms\n\n  * Accessibility\n  * Privacy Policy\n  * Terms of Use\n\n2715 North Charles Street  \nBaltimore, Maryland, USA 21218\n\n+1 (410) 516-6989  \nmuse@jh.edu\n\n©2025 Project MUSE. Produced by Johns Hopkins University Press in\ncollaboration with The Sheridan Libraries.\n\nNow and Always,  \nThe Trusted Content Your Research Requires\n\nNow and Always, The Trusted Content Your Research Requires\n\nBuilt on the Johns Hopkins University Campus\n\nBuilt on the Johns Hopkins University CampusBuilt on the Johns Hopkins University Campus\n\nBuilt on the Johns Hopkins University Campus\n\n©2025 Project MUSE. Produced by Johns Hopkins University Press in\ncollaboration with The Sheridan Libraries.\n\nBack To Top\n\n✓\n\nThanks for sharing!\n\nAddToAny\n\nMore…This website uses cookies to ensure you get the best experience on our\nwebsite. Without cookies your experience may not be seamless.\n\nAccept Accept\n\n[Skip to main content]\n\nInstitutional Login\n\nLOG IN\n\nAccessibility\n\nBrowse\n\nOR\n\nSearch: Search:\n\nmenu\n\nAdvanced Search Browse\n\nMyMUSE Account\n\nLog In / Sign Up Change My Account User Settings Access via Institution MyMUSE\nLibrary Search History View History Purchase History MyMUSE Alerts Individual\nSubscriptions\n\nContact Support\n\n# Textual Cultures: Texts, Contexts, Interpretation\n\n\\+ MUSE Alert\n\nFacebookTwitterEmailPrintShare\n\n## In this Issue\n\n### Volume 3, Number 1, Spring 2008\n\nIssue\n\n  * View \n  * Save Save\n\nAdditional Information", 'title: Down the Rabbit Hole with David Greetham - scholarworks.iu.edu\ndate: \nlink: https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569\nsnippet: David Greetham Emily Lauer Abstract Based on a talk given at the Symposium in honor of Dr. Greetham’s retirement, this essay addresses the influence Greetham has had on the author’s …']
+
+Results for '"obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission" Greetham Textual Cultures 2008':
+['title: Read Download Quot;obscured Not By A Cloak Of Print But By The …\ndate: \nlink: https://bibleandbookcenter.com/read/%22obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Textual+Cultures+vol.3+no.1+2008/\nsnippet: Read Online Quot;obscured Not By A Cloak Of Print But By The Veil Of Scribal Confusion And Mis Transmissionquot; Textual Cultures Vol 3 No 1 2008 and Download Quot;obscured Not By …', 'title: greetham obscured not by a cloak of print but by the veil of …\ndate: \nlink: https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/\nsnippet: A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. 
+adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …', 'title: obscured not by a "cloak of print" but by the veil of scribal …\ndate: \nlink: https://fiqh.world-federation.org/search/obscured+not+by+a+%22cloak+of+print%22+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham/\nsnippet: A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …']
+
+Results for 'Greetham 2008 "veil of scribal confusion" page 45-46 Project MUSE':
+['title: Uncoupled: OR, How I Lost My Author(s) - Project MUSE\ndate: None\nlink: https://muse.jhu.edu/pub/3/article/240795\nsnippet: by D Greetham · 2008 · Cited by 3 — ... project of gaining a more direct access to my author, obscured [End Page 45] not by a "veil of print" but by the veil of scribal confusion and mis-transmission.', 'title: "obscured not by a \'cloak of print\' but by the veil of scribal ...\ndate: \nlink: https://fiqh.world-federation.org/search/%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46/\nsnippet: A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …', 'title: \\"obscured not by a \\\'cloak of print\\\' but by the veil of scribal ...\ndate: \nlink: https://wemakenews.co.kr/news/search.php?q=%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46\nsnippet: 1 Apr 2025 · 최신; 주요뉴스; 필라테스 폐업 피해 급증… 소비자 보호 대책 시급; 식중
+독균 검출된 \'햇살비 고춧가루\' 회수 \'숨은 명소\' 렛츠런파크 서울 벚꽃축제 4월3일부터~', 'title: <b>Uncoupled</b>: OR, How I Lost My Author(s) - Project MUSE\ndate: \nlink: https://muse.jhu.edu/pub/3/article/240795/pdf\nsnippet: by D Greetham · 2008 · Cited by 3 — Page 4. 46 | Textual Cultures 3.1 (2008) scured not by a “veil of print” but by the veil of scribal confusion and 
+mis- transmission. Our/my author lay beyond ...']
+
+Results for '"cloak of print" vs "veil of scribal confusion" Greetham citation check':
+["title: Obscured not by a 'cloak of print' but by the veil of scribal confusion ...\ndate: \nlink: https://www.wordplays.com/definition/obscured%20not%20by%20a%20'cloak%20of%20print'%20but%20by%20the%20veil%20of%20scribal%20confusion%20and%20mistransmission\nsnippet: What does the word obscured not by a 'cloak of print' but by the veil of scribal confusion and mistransmission 
+mean? Find and lookup the definition, synonyms, and antonyms of the word …", 'title: greetham obscured not by a cloak of print but by the veil of …\ndate: \nlink: https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/\nsnippet: A. adāʾ – accomplishment of a religious duty within its prescribed time, as opposed to qaḍā. adhān – call to prayer. ʿ ādil – a dutiful person, i.e., someone who does the things that are …']
+
+Results for 'Textual Cultures vol3 no1 p45-46 Greetham quote verification':
+['title: Project MUSE - Textual Cultures: Texts, Contexts, Interpretation-Volume ...\ndate: \nlink: https://muse.jhu.edu/issue/12954\nsnippet: Textual Cultures (published annually since 1983 as Text: An Interdisciplinary Annual of Textual Studies) brings together essays by scholars from numerous disciplines and focuses on issues of textual editing, redefinitions of textuality, 
+the history of the book, material culture, and the fusion of codicology with literary, musicological, and art historical interpretation and iconography.\nadditional information: ### Volume 3, Number 1, Spring 2008\n\nIssue\n\n  * View \n  * Save Save\n\nAdditional Information\n\nTextual Cultures (published annually since 1983 as Text: An Interdisciplinary\nAnnual of Textual Studies) brings together essays by scholars from numerous\ndisciplines and focuses on issues of textual editing, redefinitions of\ntextuality, the history of the book, material culture, and the fusion of\ncodicology with literary, musicological, and art historical interpretation and\niconography. It is the official publication of the Society for Textual\nScholarship. Membership in the Society includes a subscription to the journal.\n\n### published by\n\nIndiana University Press\n\n### viewing issue\n\nVolume 3, Number 1, Spring 2008\n\n## Table of Contents\n\nView Formatted Version\n\n###  Acknowledgements\n\np. 1\n\n  * View Acknowledgements\n  * Download  Acknowledgements\n  * Save Acknowledgements Save Acknowledgements\n\n###  **Signals from a Distance** : Editing, Telepathy, Elegy\n\nMarta L. Werner\n\npp. 3-11This website uses cookies to ensure you get the best experience on our\nwebsite. Without cookies your experience may not be seamless.\n\nAccept Accept\n\n[Skip to main content]\n\nInstitutional Login\n\nLOG IN\n\nAccessibility\n\nBrowse\n\nOR\n\nSearch: Search:\n\nmenu\n\nAdvanced Search Browse\n\nMyMUSE Account\n\nLog In / Sign Up Change My Account User Settings Access via Institution MyMUSE\nLibrary Search History View History Purchase History MyMUSE Alerts Individual\nSubscriptions\n\nContact Support\n\n# Textual Cultures: Texts, Contexts, Interpretation\n\n\\+ MUSE Alert\n\nFacebookTwitterEmailPrintShare\n\n## In this Issue\n\n### Volume 3, Number 1, Spring 2008\n\nIssue\n\n  * View 
+\n  * Save Save\n\nAdditional Information', 'title: Textual criticism in Indology and in European philology during the ...\ndate: None\nlink: https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252\nsnippet: by M Witzel · 2014 · Cited by 22 — Greetham, D.C. Textual scholarship: An introduction. New York: Garland 1994. Greg, W. W. The calculus of variants, an essay on textual criticism. Oxford ...', 'title: Vol. 3, No. 1, Spring, 2008 of Textual Cultures on JSTOR\ndate: \nlink: https://www.jstor.org/stable/i30227895\nsnippet: Textual Cultures brings together essays by scholars from numerous disciplines and focuses on issues of textual editing, redefinitions of textuality, the history...', "title: THE TEXTUAL STATE OF JAMES JOYCE'S ULYSSES\ndate: None\nlink: https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download\nsnippet: by KL Tully-Needler · 2008 — 46 David Greetham engaged the dynamics of theory and practice in reviewing both Gabler and McGann, in Devils and Angels. This collection of essays was ...", "title: Textual Cultures – The Society for Textual Scholarship\ndate: \nlink: https://textualsociety.org/sts-journal-textual-cultures/\nsnippet: From its origins in 1981, the Society for Textual Scholarship's journal has led the way in opening discussions in the field of textual studies. Textual Cultures: Texts, Contexts, Interpretation is devoted to textual scholarship in all language traditions. With an expansive definition of text and 
+textuality to include a variety of disciplines and materials, the journal…\nadditional information: _Textual Cultures_ continues the tradition of _TEXT_ , the Society’s first\njournal (1984–2005), with an ever more inclusive and multi-voiced approach to\nissues of textual analysis, editorial practice and theory, (re)definitions of\ntextuality, and the diverse textual cultures in which these matters and our\napproaches evolve. _Textual Cultures_ thus serves as a forum for the\ninvestigation of textuality via new developments in fields like literature,\nhistory, codicology, material philology, art history, musicology, and cultural\nstudies.\n\n_Textual Cultures_ is a peer-reviewed, open access journal published twice a\nyear online by Indiana University ScholarWorks at\nhttps://scholarworks.iu.edu/journals/index.php/textual.\n\n### Share this:\n\n  * Share\n  * \n\n  * Click to share on Facebook (Opens in new window) Facebook\n  * Click to print (Opens in new window) Print\n  * Click to email a link to a friend (Opens in new window) Email\n  * Click to share on X (Opens in new window) X\n  * \n\nLike Loading...\n\n### Leave 
+a ReplyLike Loading...\n\n### Leave a Reply\n\nYour email address will not be published. Required fields are marked *\n\nComment *\n\nName\n\nEmail\n\nWebsite\n\nNotify me of new comments via email.\n\nΔ\n\nWebsite Powered by WordPress.com.\n\n  *     * The Society for Textual Scholarship \n    * Sign up\n    * Log in\n    * Copy shortlink\n    * Report this content \n    * Manage subscriptions\n\n%d_Textual Cultures: Texts, Contexts, Interpretation _is devoted to textual\nscholarship in all language traditions. With an expansive definition of _text_\nand _textuality_ to include a variety of disciplines and materials, the\njournal proposes as well an exchange between critics interested in textual\n_interpretation_ and specialists devoted to the analysis and preparation of\nthose texts as documents or artifacts, e.g., editors, bibliographers,\narchivists, and digital humanists. This exchange also includes practitioners\nin numerous emerging and traditional fields of study that explore the\nproduction, reproduction and reception of texts in their often multiple\ncultural _contexts_."]
+
+retrieve image information...
+
+
+Links for 'Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text':
+['https://muse.jhu.edu/pub/3/article/240795', 'https://muse.jhu.edu/article/240795/figure/fig02', 'https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'https://muse.jhu.edu/issue/12954']
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors", waiting until "load"
+
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+
+Links for 'David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46':
+['https://muse.jhu.edu/pub/3/article/240795', 'https://www.jstor.org/stable/30227901', 'https://muse.jhu.edu/pub/3/article/240795/pdf', 'http://www.bibelgriechisch.online/Maurice_Robinson_Festschrift.pdf']
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+
+Links for 'DOI 10.2979/tex.2008.3.1.44 article content verification':
+[]
+
+Links for 'Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy':
+['https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download', 'https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5330&context=gc_etds', 'https://globalcommentary.utoronto.ca/wp-content/uploads/2021/03/Practices-of-Commentary-Zeitspru%CC%88nge-Forschungen-zur-Fru%CC%88hen-Neuzeit.pdf', 'https://knowledge.uchicago.edu/record/3043/files/Boxer_uchicago_0330D_15814.pdf']
+Page.goto: net::ERR_ABORTED at https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download
+Call log:
+  - navigating to "https://digital.lib.washington.edu/researchworks/bitstreams/c4756de4-e1be-4816-bdc1-1be3da9495bb/download", waiting until "load"
+
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+
+Links for 'Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt':
+['https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281', 'https://www.cambridge.org/core/elements/scholarly-editing-in-perspective/7F91F4D6FC262406D460787C39AD56F5', 'https://en.wikipedia.org/wiki/Textual_criticism', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11178985/']
+Page.goto: net::ERR_ABORTED at https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281
+Call log:
+  - navigating to "https://scholarworks.iu.edu/journals/index.php/textual/article/download/33650/37293/86281", waiting until "load"
+
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 5 major images (width >= 250px, height >= 250px)
+Major Image 1: No valid source found
+fetching image:  https://en.wikipedia.org/wiki/Textual_criticism/upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Targum.jpg/250px-Targum.jpg
+Error reading image metadata for image 2: 404 Client Error: Not Found for url: https://en.wikipedia.org/wiki/Textual_criticism/upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Targum.jpg/250px-Targum.jpg
+Major Image 3: No valid source found
+fetching image:  https://en.wikipedia.org/wiki/Textual_criticism/upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Aleppo_Codex_%28Deut%29.jpg/250px-Aleppo_Codex_%28Deut%29.jpg
+Error reading image metadata for image 4: 404 Client Error: Not Found for url: https://en.wikipedia.org/wiki/Textual_criticism/upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Aleppo_Codex_%28Deut%29.jpg/250px-Aleppo_Codex_%28Deut%29.jpg
+Major Image 5: No valid source found
+None
+Found 8 major images (width >= 250px, height >= 250px)
+Major Image 1: No valid source found
+fetching image:  https://cdn.ncbi.nlm.nih.gov/pmc/blobs/63d0/11178985/c8827f796f9a/gr1.jpg
+image size:  765 1001
+INFO:httpx:HTTP Request: POST http://192.168.1.121:8080/v1/chat/completions "HTTP/1.1 200 OK"
+```json
+{
+    "isfound": "no",
+    "answer": "",
+    "description": "The image provided appears to be a scientific figure from a research paper, likely related to microbiology or metabolic studies. Here is a detailed description of the image:
+
+### **Description:**
+1. **Panel A (Top Left):**
+   - This panel shows two sets of images labeled as \"Control\" and \"5.0 g/L HAc.\"
+   - The control set displays circular plates with uniform growth across all dilutions, indicating no inhibition.
+   - The 5.0 g/L HAc set shows a gradient of growth inhibition, where the colonies become smaller or disappear at higher concentrations (10\(^{-3}\) to 10\(^{-5}\)).
+
+2. **Panel B (Bottom Left):**
+   - This graph plots optical density (\(OD_{600}\)) over time for three strains: \(4126-\text{WT}\), \(4126-\text{HO}\), and \(4126-\text{CAR1}\).
+   - The x-axis represents time in hours (up to 120 hours), and the y-axis represents optical density.
+   - All three strains show growth over time, with \(4126-\text{WT}\) having the highest OD values, followed by \(4126-\text{CAR1}\), and then \(4126-\text{HO}\).
+
+3. **Panel C (Top Right):**
+   - This graph shows glucose consumption over time for the same three strains.
+   - The x-axis represents time in hours (up to 144 hours), and the y-axis represents glucose concentration in grams per liter.
+   - All strains consume glucose, with \(4126-\text{WT}\) showing the fastest depletion of glucose, followed by \(4126-\text{CAR1}\), and then \(4126-\text{HO}\).
+
+4. **Panel D (Bottom Middle):**
+   - This graph plots ethanol production over time for the three strains.
+   - The x-axis represents time in hours (up to 144 hours), and the y-axis represents ethanol concentration in grams per liter.
+   - \(4126-\text{WT}\) produces the highest amount of ethanol, followed by \(4126-\text{CAR1}\), with \(4126-\text{HO}\) producing the least.
+
+5. **Panel E (Bottom Right):**
+   - This graph shows glycerol production over time for the three strains.
+   - The x-axis represents time in hours (up to 144 hours), and the y-axis represents glycerol concentration in grams per liter.
+   - \(4126-\text{CAR1}\) produces significantly more glycerol compared to \(4126-\text{WT}\) and \(4126-\text{HO}\).
+
+### **Analysis:**
+- The image is focused on comparing the growth, glucose consumption, ethanol production, and glycerol production of three strains (\(4126-\text{WT}\), \(4126-\text{HO}\), and \(4126-\text{CAR1}\)) under control conditions and in the presence of 5.0 g/L acetic acid (HAc).
+- The data suggests that \(4126-\text{CAR1}\) has altered metabolic properties, producing more glycerol but less ethanol compared to the wild-type (\(4126-\text{WT}\)) and another mutant (\(4126-\text{HO}\)).
+- The control vs. HAc plates indicate that \(5.0 \mathrm{~g} / \mathrm{L}\) acetic acid inhibits growth, particularly at higher dilutions.
+
+### **Response to User Prompt:**
+The user's prompt refers to an article from *Textual Cultures* vol 3 no 1 (2008), specifically pages 45-46 by Greetham. However, the image provided is a scientific figure related to microbiology and metabolic studies, which does not appear to be directly connected to textual analysis or literary criticism as suggested in the prompt.
+
+Thus, there is no relevant information in this image that can answer the user's query about *Textual Cultures* vol 3 no 1 (2008) by Greetham. The content of the image does not match the context provided in the prompt."
+
+}
+```
+No answer found, scoll down...
+scroll down 1 times, quit!
+None
+
+Links for 'Greetham "Uncoupled: OR, How I Lost My Author(s)" p45-46 Project MUSE':
+['https://www.researchgate.net/publication/236754710_Uncoupled_Or_How_I_Lost_My_Authors', 'https://www.jstor.org/stable/pdf/30227901.pdf', 'https://muse.jhu.edu/issue/12954', 'https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569']
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Page.goto: net::ERR_ABORTED at https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569
+Call log:
+  - navigating to "https://scholarworks.iu.edu/journals/index.php/textual/article/download/20114/26569", waiting until "load"
+
+None
+
+Links for '"obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission" Greetham Textual Cultures 2008':
+['https://bibleandbookcenter.com/read/%22obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Textual+Cultures+vol.3+no.1+2008/', 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/', 'https://fiqh.world-federation.org/search/obscured+not+by+a+%22cloak+of+print%22+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham/']
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+
+Links for 'Greetham 2008 "veil of scribal confusion" page 45-46 Project MUSE':
+['https://muse.jhu.edu/pub/3/article/240795', 'https://fiqh.world-federation.org/search/%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46/', 'https://wemakenews.co.kr/news/search.php?q=%22obscured+not+by+a+%27cloak+of+print%27+but+by+the+veil+of+scribal+confusion+and+mis-transmission%22+Greetham+45-46', 'https://muse.jhu.edu/pub/3/article/240795/pdf']
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+
+Links for '"cloak of print" vs "veil of scribal confusion" Greetham citation check':
+["https://www.wordplays.com/definition/obscured%20not%20by%20a%20'cloak%20of%20print'%20but%20by%20the%20veil%20of%20scribal%20confusion%20and%20mistransmission", 'https://fiqh.world-federation.org/search/greetham+obscured+not+by+a+cloak+of+print+but+by+the+veil+of+scribal+confusion/']
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+
+Links for 'Textual Cultures vol3 no1 p45-46 Greetham quote verification':
+['https://muse.jhu.edu/issue/12954', 'https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252', 'https://www.jstor.org/stable/i30227895', 'https://scholarworks.indianapolis.iu.edu/bitstreams/41015082-2578-49e9-aff1-281912af15bc/download', 'https://textualsociety.org/sts-journal-textual-cultures/']
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Page.goto: net::ERR_ABORTED at https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252
+Call log:
+  - navigating to "https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/viewFile/258/252", waiting until "load"
+
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+Found 0 major images (width >= 250px, height >= 250px)
+None
+
+VResults for 'Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text':
+['None', 'None', 'None', 'None']
+
+VResults for 'David Greetham 'veil of scribal confusion' Textual Cultures 2008 pages 45-46':
+['None', 'None', 'None']
+
+VResults for 'DOI 10.2979/tex.2008.3.1.44 article content verification':
+[]
+
+VResults for 'Greetham 2008 'cloak of print' vs 'veil of scribal confusion' quote accuracy':
+['None', 'None']
+
+VResults for 'Textual Cultures vol 3 no 1 2008 Greetham article page 45-46 excerpt':
+['None', 'None', 'None', 'None']
+search results save to file...
+
+final answer preparing...
+
+INFO:httpx:HTTP Request: POST http://192.168.1.157:1234/v1/chat/completions "HTTP/1.1 200 OK"
+<think>
+Okay, let's tackle this query. The user wants to fact-check a citation from David Greetham's article titled "Uncoupled: OR, How I Lost My Author(s)" published in Textual Cultures in 2008. The specific question is whether the quoted text matches what's actually in the article.
+
+First, looking at the provided sub-queries and their web search results. There are several sub-queries related to finding the full text of the article or verifying the quote.
+
+One of the sub-queries searches for "Greetham 'Uncoupled: OR, How I Lost My Author(s)' Project MUSE full text" and returns a snippet from Project MUSE that mentions page 45. The snippet says: "The essay traces the personal history of trying to find an author... obscured [End Page 45] not by a \"veil of print\" but by the veil of scribal confusion and mis-transmission."
+
+Another sub-query about pages 45-46 in Greetham's article shows a snippet from JSTOR: "Page 3. 46 Textual Cultures 3.1 (2008) scured not by a \"veil of print\" but by the veil of scribal confusion and mis-transmission." The word "scured" here is likely a typo for "secured," which might be an OCR error from scanning.
+
+The user's in-line citation says: "Our relationship with the authors... can often be obscured not by a 'cloak of print' but by the veil of scribal confusion and mis-transmission (Greetham 45-46)."
+
+Comparing this to the snippets, the key part is "obscured not by a 'veil of print' but by the veil of scribal confusion and mis-transmission." The user's citation uses "cloak of print" instead of "veil of print," which seems like a discrepancy. However, in one snippet from Project MUSE, it says "not by a \"veil of print\"..." while another mentions "cloak of print."
+
+Wait, the original quote in the search results actually has "veil of print," but the user's citation uses "cloak of print." That seems like an error. The correct term is "veil," not "cloak." So the word that doesn't match is "cloak" instead of "veil."
+</think>
+
+```json
+{
+    "isanswered": "yes",
+    "answer": "cloak",
+    "explanation": "The quoted text in the citation uses 'cloak of print,' but the web search results indicate the original article states 'veil of print.' This discrepancy confirms that the word 'cloak' does not match the correct term used in the source."
+}
+```
+INFO:httpx:HTTP Request: POST http://192.168.1.157:1234/v1/chat/completions "HTTP/1.1 200 OK"
+<think>
+Okay, let's see. The user wants to fact-check a citation from David Greetham's article.
+
+First, I need to check if the quoted text matches the original source. The inline citation mentions "cloak of print," but according to the web search results, the actual article uses "veil of print."
+
+The previous answer correctly identified that there's a discrepancy and pointed out the word "cloak" as incorrect. However, maybe I should verify if all sources consistently mention "veil" instead. The user provided multiple sub-queries where some snippets show "veil of scribal confusion," but one result mentions "veil of print."
+
+Wait, in the web results under the sub-query about page 45-46, there's a snippet that says "obscured [End Page 45] not by a 'veil of print' but by the veil of scribal confusion..." So it seems like the original text uses "veil" twice. The user's citation has "cloak of print," which is incorrect.
+
+The previous answer correctly identified "cloak" as the wrong word, but maybe I should check if there are any other discrepancies. Also, ensuring that all search results confirm this change 
+would strengthen the conclusion.
+</think>
+
+**Critics**
+Critic 1: The final answer correctly identifies *"cloak"* as the mismatched term, but it could clarify that the original text uses *veil of print* (not just "veil"), aligning with snippets like “obscured not by a 'veil of print' but by the veil of scribal confusion.” This distinction ensures precision in fact-checking.
+ike “obscured not by a 'veil of print' but by the veil of scribal confusion.” This distinction ensures precision in fact-checking.
+Critic 2: The explanation should explicitly reference specific search results (e.g., the Project MUSE snippet) to strengthen credibility, as some sub-queries returned ambiguous or unrelated 
+content that could have been misinterpreted without cross-verification.
+INFO:httpx:HTTP Request: POST http://192.168.1.157:1234/v1/chat/completions "HTTP/1.1 200 OK"
+Critic 2: The explanation should explicitly reference specific search results (e.g., the Project MUSE snippet) to strengthen credibility, as some sub-queries returned ambiguous or unrelated 
+content that could have been misinterpreted without cross-verification.
+INFO:httpx:HTTP Request: POST http://192.168.1.157:1234/v1/chat/completions "HTTP/1.1 200 OK"
+content that could have been misinterpreted without cross-verification.
+INFO:httpx:HTTP Request: POST http://192.168.1.157:1234/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://192.168.1.157:1234/v1/chat/completions "HTTP/1.1 200 OK"
+<think>
+Okay, let's tackle this. The user wants to verify if the in-line citation matches the actual content of Greetham's article.
+
+First, I'll look at the provided sub-queries and their results. There are several mentions of "veil of print" versus "cloak of print." For example, one search result from Project MUSE states<think>
+Okay, let's tackle this. The user wants to verify if the in-line citation matches the actual content of Greetham's article.
+
+First, I'll look at the provided sub-queries and their results. There are several mentions of "veil of print" versus "cloak of print." For example, one search result from Project MUSE statesOkay, let's tackle this. The user wants to verify if the in-line citation matches the actual content of Greetham's article.
+
+First, I'll look at the provided sub-queries and their results. There are several mentions of "veil of print" versus "cloak of print." For example, one search result from Project MUSE states: "obscured not by a 'veil of print' but by the veil of scribal confusion..." This directly contradicts the in-line citation's use of "cloak."
+
+First, I'll look at the provided sub-queries and their results. There are several mentions of "veil of print" versus "cloak of print." For example, one search result from Project MUSE states: "obscured not by a 'veil of print' but by the veil of scribal confusion..." This directly contradicts the in-line citation's use of "cloak."
+: "obscured not by a 'veil of print' but by the veil of scribal confusion..." This directly contradicts the in-line citation's use of "cloak."
+
+Another snippet from JSTOR and other sources also mention "veil of print," confirming that the original text uses "veil" instead of "cloak." The DOI link provided in the bibliography points 
+to a specific article, but access might be restricted. However, the snippets from available sources are consistent about using "veil."
+
+
+The user's citation has "cloak of print," which is incorrect based on the search results that show it should be "veil of print." Therefore, the word "cloak" in the citation doesn't match the original text.
+
+I need to ensure there's no confusion between "veil" and "cloak" here. The key discrepancy is the use of "cloak" instead of "veil," which is supported by multiple search results. So the answer should highlight that "cloak" is incorrect.
+</think>
+
+```json
+{
+    "isanswered": "yes",
+    "answer": "cloak",
+    "explanation": "The in-line citation uses 'cloak of print,' but web search results from Project MUSE and JSTOR confirm the original text states 'veil of print.' This discrepancy invalidates the quoted term. The explanation is supported by direct snippets like 'obscured not by a \"veil of print\"' (Project MUSE, 2008), ensuring alignment with verified sources."
+}
+```

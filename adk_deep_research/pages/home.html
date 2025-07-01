@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Stock Deep Research</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="deep_research.html">Deep Research</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" id="stockSearchForm">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search (e.g., AAPL, BRK.B, BTC, NYSE:JPM, LSE:BARC)"
+              aria-label="Search"
+              id="stockSymbolInput"
+            />
+            <button class="btn btn-outline-success" type="submit" id="searchButton">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- TradingView Widget BEGIN -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tradingview-widget-container" id="advancedChartContainer" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+              {
+                "autosize": true,
+                "height": "450",
+                "symbol": "NASDAQ:AAPL",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "en",
+                "allow_symbol_change": true,
+                "support_host": "https://www.tradingview.com"
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tradingview-widget-container" id="technicalAnalysisContainer">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+            {
+              "interval": "1m",
+              "isTransparent": false,
+              "height": "450",
+              "symbol": "NASDAQ:AAPL",
+              "showIntervalTabs": true,
+              "displayMode": "single",
+              "locale": "en",
+              "colorTheme": "light"
+            }
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tradingview-widget-container" id="financialsContainer">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
+              {
+              "isTransparent": false,
+              "largeChartUrl": "",
+              "displayMode": "regular",
+              "height": "450",
+              "colorTheme": "light",
+              "symbol": "NASDAQ:AAPL",
+              "locale": "en"
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tradingview-widget-container" id="stockHeatmapContainer">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+            {
+            "exchanges": [],
+            "dataSource": "SPX500",
+            "grouping": "sector",
+            "blockSize": "market_cap_basic",
+            "blockColor": "change",
+            "locale": "en",
+            "symbolUrl": "",
+            "colorTheme": "light",
+            "hasTopBar": false,
+            "isDataSetEnabled": false,
+            "isZoomEnabled": true,
+            "hasSymbolTooltip": true,
+            "isMonoSize": false,
+            "height": "450"
+          }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get references to HTML elements
+      const stockSearchForm = document.getElementById('stockSearchForm');
+      const stockSymbolInput = document.getElementById('stockSymbolInput');
+
+      const advancedChartContainer = document.getElementById('advancedChartContainer');
+      const technicalAnalysisContainer = document.getElementById('technicalAnalysisContainer');
+      const financialsContainer = document.getElementById('financialsContainer');
+      const heatmapContainer = document.getElementById('stockHeatmapContainer');
+      // Stock Heatmap is generally not symbol-specific, so we usually don't update it based on a single stock search.
+
+      /**
+       * Helper function to load/reload a TradingView widget.
+       * @param {HTMLElement} container - The div element where the widget should be placed.
+       * @param {string} scriptSrc - The URL of the TradingView embed script.
+       * @param {object} config - The JavaScript object containing widget configuration (e.g., symbol).
+       */
+      function loadTradingViewWidget(container, scriptSrc, config) {
+        // Clear previous widget content (including the iframe injected by TradingView)
+        // Also re-add the necessary internal divs for the widget to render into.
+        container.innerHTML = `
+          <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+        `;
+
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = scriptSrc;
+        script.async = true; // Important for asynchronous loading
+        script.innerHTML = JSON.stringify(config); // Convert the config object to a JSON string
+
+        container.appendChild(script);
+      }
+      // is symbol a crypto
+      
+      // Add event listener to the form for submission
+      stockSearchForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission (page reload)
+
+        let symbol = stockSymbolInput.value.trim().toUpperCase(); // Get input and clean it
+
+        if (!symbol) {
+          alert('Please enter a stock symbol.');
+          return;
+        }
+        is_crypto = false;
+        // --- Intelligent Symbol Prefixing Logic ---
+        if (!symbol.includes(':')) {
+          // Case 1: Cryptocurrencies (common base symbols)
+          // These typically need a pair (e.g., BTCUSD) and an exchange.
+          const cryptoBaseSymbols = ['BTC', 'ETH', 'XRP', 'LTC', 'ADA', 'DOGE', 'SOL', 'DOT', 'BNB', 'MATIC', 'AVAX']; // Add more popular ones
+          if (cryptoBaseSymbols.includes(symbol)) {
+            // Default to Binance and USD pair. User can override with e.g., "COINBASE:ETHUSD"
+            symbol = `BINANCE:${symbol}USD`;
+            is_crypto = true;
+          }
+          // Case 2: Specific known stock symbols that consistently require a particular exchange prefix
+          // This list should be kept minimal and only for symbols that frequently fail with a default.
+          else if (symbol === 'BRK.B') {
+            symbol = 'NYSE:BRK.B'; // Berkshire Hathaway Class B is primarily NYSE
+          }
+          // Add more specific cases if needed, e.g., for specific international symbols:
+          // else if (symbol === 'TSE:7203') { symbol = 'TSE:7203'; } // Toyota on Tokyo Stock Exchange (example)
+          // Case 3: General US stocks (default to NASDAQ)
+          // For NYSE stocks (like JPM, KO, WMT), the user should ideally input 'NYSE:JPM'.
+          // If they don't, we default to NASDAQ, which might not find it or find a different asset.
+          else {
+            symbol = `NASDAQ:${symbol}`;
+          }
+        }
+        // If symbol already contains a colon (e.g., "NYSE:GOOG" or "BINANCE:BTCUSD"),
+        // we assume the user has provided the full, correct symbol and use it as is.
+        // --- End of Symbol Prefixing Logic ---
+
+        // --- Update Advanced Chart Widget ---
+        const advancedChartConfig = {
+          "autosize": true,
+          "height": "450",
+          "symbol": symbol, // THIS IS THE UPDATED SYMBOL
+          "interval": "D",
+          "timezone": "Etc/UTC",
+          "theme": "light",
+          "style": "1",
+          "locale": "en",
+          "allow_symbol_change": true,
+          "support_host": "https://www.tradingview.com"
+        };
+        loadTradingViewWidget(advancedChartContainer, "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js", advancedChartConfig);
+
+        // --- Update Technical Analysis Widget ---
+        const technicalAnalysisConfig = {
+          "interval": "1m",
+          "isTransparent": false,
+          "height": 450,
+          "symbol": symbol, // THIS IS THE UPDATED SYMBOL
+          "showIntervalTabs": true,
+          "displayMode": "single",
+          "locale": "en",
+          "colorTheme": "light"
+        };
+        loadTradingViewWidget(technicalAnalysisContainer, "https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js", technicalAnalysisConfig);
+
+        // --- Update Financials Widget ---
+        const financialsConfig = {
+          "isTransparent": false,
+          "largeChartUrl": "",
+          "displayMode": "regular",
+          "height": "450",
+          "colorTheme": "light",
+          "symbol": symbol, // THIS IS THE UPDATED SYMBOL
+          "locale": "en"
+        };
+        loadTradingViewWidget(financialsContainer, "https://s3.tradingview.com/external-embedding/embed-widget-financials.js", financialsConfig);
+
+        // --- Update Heatmap Widget ---
+        if (is_crypto){
+            const heatmapConfig = {
+            "dataSource": "Crypto",
+            "blockSize": "market_cap_calc",
+            "blockColor": "24h_close_change|5",
+            "locale": "en",
+            "symbolUrl": "",
+            "colorTheme": "light",
+            "hasTopBar": false,
+            "isDataSetEnabled": false,
+            "isZoomEnabled": true,
+            "hasSymbolTooltip": true,
+            "isMonoSize": false,
+            "height": "450"
+          }
+          loadTradingViewWidget(heatmapContainer, "https://s3.tradingview.com/external-embedding/embed-widget-crypto-coins-heatmap.js", heatmapConfig);
+        }else{
+            const heatmapConfig = {
+            "exchanges": [],
+            "dataSource": "SPX500",
+            "grouping": "sector",
+            "blockSize": "market_cap_basic",
+            "blockColor": "change",
+            "locale": "en",
+            "symbolUrl": "",
+            "colorTheme": "light",
+            "hasTopBar": false,
+            "isDataSetEnabled": false,
+            "isZoomEnabled": true,
+            "hasSymbolTooltip": true,
+            "isMonoSize": false,
+            "height": "450"
+          }
+          loadTradingViewWidget(heatmapContainer, "https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js", heatmapConfig);
+        }
+
+        // Note: The Stock Heatmap widget usually displays a general market overview (e.g., SPX500 sectors)
+        // and is not typically updated with a specific stock symbol search. If you wanted to update it
+        // to show a specific sector, you would need to adjust its 'dataSource' or 'exchanges' configuration.
+      });
+    </script>
+  </body>
+</html>
